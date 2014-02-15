@@ -64,4 +64,4 @@
     //   }
     // }]);
 
-})(window,document,window.angular,'BBHApp','controllers');
+})(window,document,window.angular,'BriocheApp','controllers');

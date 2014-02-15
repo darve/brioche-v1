@@ -19,4 +19,4 @@
     //     };
     // }]);
 
-})(window,document,window.angular,'BBHApp','directives');
+})(window,document,window.angular,'BriocheApp','directives');

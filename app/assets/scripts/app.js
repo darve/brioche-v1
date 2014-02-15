@@ -11,12 +11,15 @@
                         ns + '.services',
                         ns + '.filters'] /* module dependencies */);
 
-    // app.config(['$routeProvider', function( $routeProvider ){
-    //     $routeProvider.when('/', {
-    //     	templateUrl: 'home.html'
-    //     });
-    //     $routeProvider.otherwise({redirectTo: '/'});
-    // }]);
+    app.config(['$routeProvider', function( $routeProvider ){
+        $routeProvider.when('/', {
+        	templateUrl: 'home.html'
+        });
+        $routeProvider.when('/about', {
+            templateUrl: 'about.html'
+        });
+        // $routeProvider.otherwise({redirectTo: '/'});
+    }]);
 
     app.run(['$timeout', '$rootScope', '$http', function($timeout, $rootScope, $http) {
 

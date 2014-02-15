@@ -3,11 +3,11 @@ var path     = require('path'),
     app      = express(),
     mongoose = require('mongoose');
 
-var dbusr = process.env.MONGOLABUSR,
-    dbpw  = process.env.MONGOLABPW,
-    db    = process.env.MONGOLABDB;
+// var dbusr = process.env.MONGOLABUSR,
+//     dbpw  = process.env.MONGOLABPW,
+//     db    = process.env.MONGOLABDB;
 
-mongoose.connect('mongodb://'+dbusr+':'+dbpw+'@ds061767.mongolab.com:61767/'+db);
+// mongoose.connect('mongodb://'+dbusr+':'+dbpw+'@ds061767.mongolab.com:61767/'+db);
 
 // Apparently needs to be used in such that req.body automatically gets parsed
 // properly.
@@ -23,8 +23,8 @@ app.use(express.logger()); // Log requests to the console
 
 // Setup models and controllers.
 // Both Model and Controller is kept in same file for simplicity sake
-var users = require('./controllers/users');
-users.setup(app, mongoose);
+// var users = require('./controllers/users');
+// users.setup(app, mongoose);
 
 // This is the route that sends the base index.html file all other routes are
 // for data only, no server-side views here.

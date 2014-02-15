@@ -21,4 +21,4 @@
         };
     });
 
-})(window,document,window.angular,'BBHApp','filters');
+})(window,document,window.angular,'BriocheApp','filters');

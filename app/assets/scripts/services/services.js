@@ -20,4 +20,4 @@
         };
     }]);
 
-})(window,document,window.angular,'BBHApp','services');
+})(window,document,window.angular,'BriocheApp','services');
