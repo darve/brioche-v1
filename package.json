@@ -1,0 +1,24 @@
+{
+  "name": "brioche",
+  "version": "0.0.0",
+  "description": "brioche =======",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darve/brioche.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/darve/brioche/issues"
+  },
+  "homepage": "https://github.com/darve/brioche",
+  "dependencies": {
+    "gulp": "~3.5.2",
+    "gulp-util": "~2.2.9",
+    "gulp-uglify": "~0.1.0"
+  }
+}

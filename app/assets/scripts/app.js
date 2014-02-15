@@ -1,10 +1,25 @@
-'use strict';
 
+/* 	Brioche App
+/* ================================== */
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/users', {templateUrl: '/app/partials/users.html', controller: 'UserCtrl'});
-    $routeProvider.when('/about', {templateUrl: '/app/partials/about.html', controller: 'AboutCtrl'});
-    $routeProvider.otherwise({redirectTo: '/users'});
-  }]);
+(function(w,d,n,ng,ns) {
+
+    'use strict';
+
+    var app = ng.module(ns /* module name */,
+                       [ns + '.controllers',
+                        ns + '.services',
+                        ns + '.filters'] /* module dependencies */);
+
+    // app.config(['$routeProvider', function( $routeProvider ){
+    //     $routeProvider.when('/', {
+    //     	templateUrl: 'home.html'
+    //     });
+    //     $routeProvider.otherwise({redirectTo: '/'});
+    // }]);
+
+    app.run(['$timeout', '$rootScope', '$http', function($timeout, $rootScope, $http) {
+
+    }]);
+
+})(window,document,navigator,window.angular,'BriocheApp');
